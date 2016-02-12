@@ -7,7 +7,7 @@
   },
   "plugins": [
     "./plugins/paginator.coffee",
-    "./node_modules/wintersmith-pandoc/"
+    "./node_modules/wintersmith-pandoc-extra/"
   ],
   "require": {
     "moment": "moment",
@@ -18,8 +18,6 @@
     "pretty": true
   },
   "markdown": {
-    "smartLists": true,
-    "smartypants": true
   },
   "paginator": {
     "perPage": 3
