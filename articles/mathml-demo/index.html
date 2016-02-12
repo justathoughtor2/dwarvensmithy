@@ -8,7 +8,9 @@
     </title>
     <link rel="alternate" href="http://justathoughtor2.com/dwarvensmithy/feed.xml" type="application/rss+xml" title="And you thought elves were bad...">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
-    <link rel="stylesheet" href="http://justathoughtor2.com/dwarvensmithy/css/main.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body class="article-detail">
     <header class="header">
@@ -22,7 +24,6 @@
       <div class="content-wrap">
         <article class="article">
           <section class="content"><p>This is a demo of the utility of MathML syntax in Dwarven&nbsp;Smithy!</p>
-<p><span class="more"></span></p>
 <h2 id="a-simple-logic-problem">A simple logic&nbsp;problem…</h2>
 <p><span class="math inline">\(\text{Assume } p \implies q\)</span><br />
 <span class="math inline">\(\neg q\)</span><br />
@@ -36,16 +37,30 @@
     </div>
     <footer>
       <div class="content-wrap">
-        <div class="nav"><a href="http://justathoughtor2.com/dwarvensmithy/">« Full blog</a></div>
+        <div class="nav"><a href="/">« Full blog</a></div>
         <section class="about"><p>Dwarven Smithy! is made by Jesse P Bohanan (<a href="http://justathoughtor2.com/dwarvensmithy">justathoughtor2</a>) and is Free and Open Source Software under the <a href="http://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3</a>.</p>
 
         </section>
         <section class="copy">
-          <p>&copy; 2016&nbsp;<a href="http://justathoughtor2.com/">justathoughtor2</a>&mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          <p>
+            &copy; 2016&nbsp;
+            a(href='http://justathoughtor2.com/') justathoughtor2
+            &mdash; powered by&nbsp;
+            a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+            //- please leave the "powered by" if you use the design
           </p>
         </section>
       </div>
     </footer>
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="https://cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script>
+      $('#content').find('.mermaid').find('span').contents().unwrap();
+      $('#content').find('.mermaid').text(function () {
+        return $(this).text().replace(/–/g, "--"); 
+      });
+      setTimeout(mermaid.initialize({startOnLoad:true}), 25000);
+    </script>
   </body>
 </html>

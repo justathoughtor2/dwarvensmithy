@@ -5,17 +5,33 @@
     <atom:link href="http://justathoughtor2.com/dwarvensmithy/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://justathoughtor2.com/dwarvensmithy</link>
     <description>And you thought elves were bad...</description>
-    <pubDate>Sat, 01 Oct 2016 20:00:00 -0400</pubDate>
+    <pubDate>Thu, 11 Feb 2016 19:00:00 -0500</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
+      <title>mermaid Demo</title>
+      <link>http://justathoughtor2.com/dwarvensmithy/articles/mermaid-demo/</link>
+      <pubDate>Thu, 11 Feb 2016 19:00:00 -0500</pubDate>
+      <guid isPermaLink="true">http://justathoughtor2.com/dwarvensmithy/articles/mermaid-demo/</guid>
+      <author></author>
+      <description>&lt;p&gt;A demonstration of the utility of mermaid diagrams in Dwarven Smithy!&lt;/p&gt;
+&lt;h2 id=&quot;a-simple-flowchart-demo&quot;&gt;A simple flowchart demo…&lt;/h2&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+graph TD
+    A[&amp;quot;fa:fa-credit-alt Donate&amp;quot;]
+    A--&amp;gt;B[&amp;quot;fa:fa-ban No money?!&amp;quot;]
+    A--&amp;gt;C[&amp;quot;fa:fa-spinner Processing transaction...&amp;quot;]
+    C--&amp;gt;D[&amp;quot;fa:fa-dollar Ka-ching!&amp;quot;]
+&lt;/div&gt;
+</description>
+    </item>
+    <item>
       <title>MathML Demo</title>
       <link>http://justathoughtor2.com/dwarvensmithy/articles/mathml-demo/</link>
-      <pubDate>Sat, 01 Oct 2016 20:00:00 -0400</pubDate>
+      <pubDate>Tue, 09 Feb 2016 19:00:00 -0500</pubDate>
       <guid isPermaLink="true">http://justathoughtor2.com/dwarvensmithy/articles/mathml-demo/</guid>
       <author></author>
       <description>&lt;p&gt;This is a demo of the utility of MathML syntax in Dwarven Smithy!&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;a-simple-logic-problem&quot;&gt;A simple logic problem…&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&quot;math inline&quot;&gt;\(\text{Assume } p \implies q\)&lt;/span&gt;&lt;br /&gt;
 &lt;span class=&quot;math inline&quot;&gt;\(\neg q\)&lt;/span&gt;&lt;br /&gt;
