@@ -53,12 +53,7 @@
 
         </section>
         <section class="copy">
-          <p>
-            &copy; 2016&nbsp;
-            a(href='http://justathoughtor2.com/') justathoughtor2
-            &mdash; powered by&nbsp;
-            a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-            //- please leave the "powered by" if you use the design
+          <p>&copy; 2016&nbsp;<a href="http://justathoughtor2.com/">justathoughtor2&nbsp;</a>&mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
           </p>
         </section>
       </div>
@@ -66,12 +61,6 @@
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="https://cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script>
-      $('#content').find('.mermaid').find('span').contents().unwrap();
-      $('#content').find('.mermaid').text(function () {
-        return $(this).text().replace(/–/g, "--"); 
-      });
-      setTimeout(mermaid.initialize({startOnLoad:true}), 25000);
-    </script>
+    <script srhref="http://justathoughtor2.com/dwarvensmithy/js/mermaid-render.js"></script>
   </body>
 </html>

@@ -15,13 +15,25 @@
       <guid isPermaLink="true">http://justathoughtor2.com/dwarvensmithy/articles/mermaid-demo/</guid>
       <author></author>
       <description>&lt;p&gt;A demonstration of the utility of mermaid diagrams in Dwarven Smithy!&lt;/p&gt;
-&lt;h2 id=&quot;a-simple-flowchart-demo&quot;&gt;A simple flowchart demo…&lt;/h2&gt;
+&lt;h2 id=&quot;a-simple-flowchart&quot;&gt;A simple flowchart…&lt;/h2&gt;
 &lt;div class=&quot;mermaid&quot;&gt;
-graph TD
-    A[&amp;quot;fa:fa-credit-alt Donate&amp;quot;]
-    A--&amp;gt;B[&amp;quot;fa:fa-ban No money?!&amp;quot;]
-    A--&amp;gt;C[&amp;quot;fa:fa-spinner Processing transaction...&amp;quot;]
-    C--&amp;gt;D[&amp;quot;fa:fa-dollar Ka-ching!&amp;quot;]
+    graph TD
+        A[&amp;quot;fa:fa-credit-card-alt Donate&amp;quot;]
+        A--&amp;gt;B[&amp;quot;fa:fa-ban No money?!&amp;quot;]
+        A--&amp;gt;C[&amp;quot;fa:fa-spinner Processing transaction...&amp;quot;]
+        C--&amp;gt;D[&amp;quot;fa:fa-dollar Ka-ching!&amp;quot;]
+&lt;/div&gt;
+&lt;h2 id=&quot;a-simple-gantt-chart&quot;&gt;A simple Gantt chart…&lt;/h2&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+    gantt
+        title Gantt, yo.
+
+        section Section 1
+            Awesome stuff           :a1, 2016-02-12, 30d
+            More awesome            :after a1,       20d
+        section Section 2
+            Be awesome              :2016-02-16,     12d
+            Still more awesome      :24d
 &lt;/div&gt;
 </description>
     </item>

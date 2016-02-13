@@ -24,13 +24,25 @@
       <div class="content-wrap">
         <article class="article">
           <section class="content"><p>A demonstration of the utility of mermaid diagrams in Dwarven&nbsp;Smithy!</p>
-<h2 id="a-simple-flowchart-demo">A simple flowchart&nbsp;demo…</h2>
+<h2 id="a-simple-flowchart">A simple&nbsp;flowchart…</h2>
 <div class="mermaid">
-graph <span class="caps">TD</span>
-    A[&quot;fa:fa-credit-alt Donate&quot;]
-    A&#8211;&gt;B[&quot;fa:fa-ban No money?!&quot;]
-    A&#8211;&gt;C[&quot;fa:fa-spinner Processing transaction&#8230;&quot;]
-    C&#8211;&gt;D[&quot;fa:fa-dollar Ka-ching!&quot;]
+    graph <span class="caps">TD</span>
+        A[&quot;fa:fa-credit-card-alt Donate&quot;]
+        A&#8211;&gt;B[&quot;fa:fa-ban No money?!&quot;]
+        A&#8211;&gt;C[&quot;fa:fa-spinner Processing transaction&#8230;&quot;]
+        C&#8211;&gt;D[&quot;fa:fa-dollar Ka-ching!&quot;]
+</div>
+<h2 id="a-simple-gantt-chart">A simple Gantt&nbsp;chart…</h2>
+<div class="mermaid">
+    gantt
+        title Gantt, yo.
+
+        section Section 1
+            Awesome stuff           :a1, 2016-02-12, 30d
+            More awesome            :after a1,       20d
+        section Section 2
+            Be awesome              :2016-02-16,     12d
+            Still more awesome      :24d
 </div>
 </section>
         </article>
@@ -43,12 +55,7 @@ graph <span class="caps">TD</span>
 
         </section>
         <section class="copy">
-          <p>
-            &copy; 2016&nbsp;
-            a(href='http://justathoughtor2.com/') justathoughtor2
-            &mdash; powered by&nbsp;
-            a(href='https://github.com/jnordberg/wintersmith') Wintersmith
-            //- please leave the "powered by" if you use the design
+          <p>&copy; 2016&nbsp;<a href="http://justathoughtor2.com/">justathoughtor2&nbsp;</a>&mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
           </p>
         </section>
       </div>
@@ -56,12 +63,6 @@ graph <span class="caps">TD</span>
     <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="https://cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script>
-      $('#content').find('.mermaid').find('span').contents().unwrap();
-      $('#content').find('.mermaid').text(function () {
-        return $(this).text().replace(/–/g, "--"); 
-      });
-      setTimeout(mermaid.initialize({startOnLoad:true}), 25000);
-    </script>
+    <script srhref="http://justathoughtor2.com/dwarvensmithy/js/mermaid-render.js"></script>
   </body>
 </html>
