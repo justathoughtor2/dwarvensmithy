@@ -26,16 +26,16 @@ html(lang='en')
     div#content
       div.content-wrap
         block content
-          h2 Dwarven Smithy!!
+          h2 Dwarven Smithy!
     footer
       div.content-wrap
         block footer
           section.about
             !=contents['about.md'].html
           section.copy
-            p.
+            p
               &copy; #{ new Date().getFullYear() }&nbsp;
-              a(href='http://justathoughtor2.com/') #{ locals.owner }
+              a(href='http://justathoughtor2.com/') #{ locals.owner }&nbsp;
               &mdash; powered by&nbsp;
               a(href='https://github.com/jnordberg/wintersmith') Wintersmith
               //- please leave the "powered by" if you use the design
@@ -43,10 +43,5 @@ html(lang='en')
       script(src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML')
       script(src='https://cdn.rawgit.com/knsv/mermaid/master/dist/mermaid.min.js')
       script(src='https://code.jquery.com/jquery-2.2.0.min.js')
-      script.
-        $('#content').find('.mermaid').find('span').contents().unwrap();
-        $('#content').find('.mermaid').text(function () {
-          return $(this).text().replace(/–/g, "--"); 
-        });
-        setTimeout(mermaid.initialize({startOnLoad:true}), 25000);
+      script(src=contents.js['mermaid-render.js'].url)
         
