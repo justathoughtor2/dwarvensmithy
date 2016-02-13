@@ -70,7 +70,7 @@ walk(path.join(process.cwd(), 'build'), function(err, results) {
                 if(err) {
                   throw err;
                 }
-              var uriRe = new RegExp(/href="\/.*"/g);
+              var uriRe = new RegExp(/[(href)(src)]="\/.*"/g);
                 console.log("Checking for matches...");
   //              var matches = data.toString().match(uriRe);
   //              console.log(matches.length);
